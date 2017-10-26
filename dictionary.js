@@ -1,4 +1,4 @@
-module.exports = function merge(dict1, dict2, decision_func) {
+function merge(dict1, dict2, decision_func) {
 	let ob = dict1; 
 	let keys = Object.keys(dict2);	
 
@@ -21,3 +21,5 @@ module.exports = function merge(dict1, dict2, decision_func) {
 	return ob;
 
 } 
+
+module.exports = merge
